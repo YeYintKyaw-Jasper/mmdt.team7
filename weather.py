@@ -1,11 +1,14 @@
 import pandas as pd
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 
 city_name = "Yangon"
-api_key = "6705a56b54f2a2949f710d6658e41f6b"
+api_key = os.getenv("WEATHER_KEY")
 
-weather_url = "https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}"
+weather_url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}"
 
 weather_data = requests.get(weather_url).json()
 
