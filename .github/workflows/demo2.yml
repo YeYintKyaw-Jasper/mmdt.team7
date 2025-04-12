@@ -18,6 +18,6 @@ jobs:
           cache: "pip"
       - name: Install libraries
         run: pip install -r requirements.txt
-      - names: Run Python file as testing
+      - name: Run Python file as testing
         run: python exercise1.py
 
