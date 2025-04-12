@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: "pip"
-      - names: Install libraries
+      - name: Install libraries
         run: pip install -r requirements.txt
       - names: Run Python file as testing
         run: python exercise1.py
