@@ -20,4 +20,6 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run Python file as testing
         run: python exercise1.py
+      # - name: Print Weather API secret
+      #   run: echo ${{ secrets.WEATHER_KEY }}
 
